@@ -1,0 +1,53 @@
+.conten{
+  background: linear-gradient(81deg, rgba(0,0,36,1) 26%, rgba(10,9,121,1) 69%, rgba(0,209,253,1) 100%, rgba(0,212,255,1) 100%);
+
+}
+
+.example-card {
+    min-width: 400px;
+    max-width: 500px;
+    float: left;
+    margin: 3rem;
+    border-radius: 5rem;
+  }
+  
+  .example-header-image {
+    background-image: url("/Imagenes/Rick-and-morty.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    height: 10%;
+    width: 10%;
+    
+  }
+  .divCard{
+    float: right;
+    background-color: black;
+    width: 100%;
+    margin: 14em;
+
+  }
+.img{
+width: 30rem;
+height: 30rem;
+position: relative;
+padding: 10px;
+border-radius: 5rem;
+text-align: center;
+
+
+}
+
+  .matselect{
+
+    
+    border: solid 1px;
+    border-radius: 5px;
+    place-content: "Characters";
+    float: right;
+    width: 30rem;
+  }
+  .buttonAcction{
+margin-left: 5rem;
+border-radius: 5px;
+text-align: center;
+  }

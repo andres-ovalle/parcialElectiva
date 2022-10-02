@@ -1,0 +1,33 @@
+
+<div container-fluid class="conten">
+
+    <p *ngFor="let episodes of episodesList">
+
+        <mat-card class="example-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+
+                <mat-card-title>Nombre: {{episodes.name}}</mat-card-title>
+                <mat-card-subtitle>Id: {{episodes.id}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+            <mat-label>Episodio: {{episodes.episode}}</mat-label>
+            <mat-label> fecha de estreno:{{episodes.air_date}}</mat-label>
+            <hr>
+            <mat-label>characters:</mat-label>
+
+            <mat-select class="matselect">
+                <mat-option *ngFor="let characters of episodes.characters" value="1"> {{characters}}</mat-option>     
+            </mat-select>
+
+            <img class="img" mat-card-image src="/assets/Imagenes/Rick-and-morty.jpg">
+            <mat-label> fecha de creacion:{{episodes.created}}</mat-label>
+        </mat-card-content>
+            <mat-card-actions>
+                <button class="buttonAcction" mat-button [routerLink]="episodes.url">URL</button>
+                
+            </mat-card-actions>
+        </mat-card>
+
+    </p>
+</div>
